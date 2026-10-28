@@ -1,0 +1,3 @@
+com\feedback\backend\repository\FeedbackRepository.class
+com\feedback\backend\controller\FeedbackController.class
+com\feedback\backend\entity\Feedback.class

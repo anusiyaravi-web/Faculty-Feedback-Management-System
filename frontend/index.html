@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Feedback System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">🎓</div>
+
+        <h1>Faculty Feedback System</h1>
+
+        <form id="feedbackForm">
+
+            <label for="studentName">Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name">
+
+            <label for="registerNumber">Register Number</label>
+            <input
+                type="text"
+                id="registerNumber"
+                placeholder="Enter your register number">
+
+            <label for="facultyName">Select Faculty</label>
+            <select id="facultyName">
+                <option value="">Choose Faculty</option>
+                <option>Dr. Kumar</option>
+                <option>Dr. Priya</option>
+                <option>Dr. Ravi</option>
+                <option>Dr. Meena</option>
+                <option>Dr. Suresh</option>
+            </select>
+
+            <div id="questions"></div>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

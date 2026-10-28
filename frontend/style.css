@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #667eea 0%,
+        #764ba2 50%,
+        #8c3be3 100%
+    );
+    padding:40px 20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    border-radius:25px;
+    padding:35px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.25);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    margin:auto;
+    margin-bottom:20px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+label{
+    display:block;
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    margin-top:18px;
+    margin-bottom:6px;
+}
+
+input,
+select{
+    width:100%;
+    padding:14px 16px;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:15px;
+    outline:none;
+
+    background:white;
+}
+
+input:focus,
+select:focus{
+    box-shadow:0 0 10px rgba(255,255,255,0.8);
+}
+
+.question{
+    margin-top:15px;
+
+    background:rgba(255,255,255,0.12);
+
+    padding:15px;
+
+    border-radius:15px;
+
+    transition:all 0.3s ease;
+}
+
+.question:hover{
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,0.22);
+}
+
+.question label{
+    margin-top:0;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+    border-radius:15px;
+
+    background:white;
+    color:#6a11cb;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.03);
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+button:active{
+    transform:scale(0.98);
+}
+
+::placeholder{
+    color:#777;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius:20px;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:20px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .logo{
+        width:70px;
+        height:70px;
+        font-size:30px;
+    }
+
+    input,
+    select{
+        padding:12px;
+    }
+
+    button{
+        font-size:16px;
+    }
+}
